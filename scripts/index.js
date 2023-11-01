@@ -50,14 +50,14 @@ const notifications = [
         userImage: IMG_PATH + "avatar-jacob-thompson.webp"
     },
     {
-        name: "Nathan Peterson",
+        user: "Nathan Peterson",
         action: "reacted to your recent post",
         complement: "5 end-game strategies to increase your win rate",
         time: ["2", "week"],
         userImage: IMG_PATH + "avatar-nathan-peterson.webp"
     },
     {
-        name: "Anna Kim",
+        user: "Anna Kim",
         action: "left the group",
         complement: "Chess Club",
         time: ["2", "week"],
