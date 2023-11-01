@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Notifications page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <div id="app" class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="header__div center-element">
+                    <h1 class="header-div__h1">
+                        Notifications
+                    </h1>
+                    <div class="header-div__number center-element" id="number-notifications">
+                        0
+                    </div>
+                </div>
+                <button class="header__btn" id="mark-all-btn">
+                    Mark all as read
+                </button>
+            </header>
+            <!-- Main -->
+            <main class="main" id="main"></main>
+        </div>
+        <!-- Footer -->
+        <footer class="footer attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Templates -->
+    <template id="notification">
+        <div class="notification">
+            <img class="notification__user-img" alt="User Image">
+            <div class="notification__txt">
+                <div class="notification-txt__p">
+                    <span class="notification-txt-p__user"></span>
+                    <span class="notification-txt-p__action"></span>
+                    <span class="notification-txt-p__complement"></span>
+                    <span class="notification-txt-p__indicator none"></span>
+                </div>
+                <div class="notification-txt__time"></div>
+                <p class="notification-txt__message"></p>
+            </div>
+            <img class="notification__post-img" alt="Post Image">
+        </div>
+    </template>
+    <!-- JS -->
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
